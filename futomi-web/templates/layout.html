@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block title %}Restaurant Website{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <!-- Add CSS and JS links here -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-container">
+                <a href="{{ url_for('home') }}" class="navbar-brand">OSHE SUSHI</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="{{ url_for('home') }}" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="{{ url_for('menu') }}" class="nav-link">Menu</a></li>
+                    <li class="nav-item"><a href="{{ url_for('about') }}" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="{{ url_for('contact') }}" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        <!-- The content for each child template will go here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        ©2023 OSHE SUSHI
+    </footer>
+</body>
+</html>

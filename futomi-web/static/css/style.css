@@ -1,0 +1,341 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar-brand {
+  float: left;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar-nav {
+  list-style: none;
+  float: right;
+}
+
+.nav-item {
+  float: left;
+}
+
+.nav-link {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #ddd;
+  color: #333;
+}
+
+.menu-section {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.menu-section h1, .menu-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.menu-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-section ul li {
+  background: #f0f0f0;
+  margin-bottom: 5px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.menu-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.menu-section table, .menu-section th, .menu-section td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.menu-section th {
+  background-color: #333;
+  color: white;
+}
+
+.trust-me-sets {
+  display: flex;
+  justify-content: space-around; /* This will space out the sets evenly */
+  flex-wrap: wrap; /* Allows sets to wrap onto the next line on smaller screens */
+}
+
+.set {
+  flex: 1; /* This will allow sets to grow and shrink as needed */
+  min-width: 250px; /* Minimum width for each set */
+  margin: 10px; /* Spacing between sets */
+  padding: 20px; /* Padding inside each set */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: adds shadow for depth */
+  /* Additional styling here */
+}
+
+/* Styling for smaller screens */
+@media (max-width: 768px) {
+  .trust-me-sets {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .set {
+      min-width: 100%; /* Sets take full width on small screens */
+  }
+}
+
+/* about */
+
+.about-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+
+.about-section h1,
+.about-section h2 {
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+}
+
+
+
+
+.about-image,
+.chef-image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
+
+.about-section p {
+  color: #555;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .about-section h1,
+  .about-section h2 {
+      text-align: left;
+  }
+}
+
+.contact-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-section h1,
+.contact-section h2 {
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.contact-section p {
+  margin-bottom: 1em;
+  line-height: 1.6;
+  color: #555;
+}
+
+.contact-section form {
+  margin-top: 2em;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-section label {
+  display: block;
+  margin-bottom: .5em;
+  color: #000;
+}
+
+.contact-section input[type=text],
+.contact-section input[type=email],
+.contact-section textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact-section input[type=submit] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-section input[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .contact-section form {
+      width: 90%;
+  }
+}
+
+.homepage {
+  text-align: center;
+}
+
+.feature-image {
+  display: block; /* Removes any default white space around the image */
+  width: 100%; /* Stretches the image to the full width of its container */
+  height: auto; /* Keeps the image's aspect ratio intact */
+  object-fit: cover; /* Ensures the image covers the area, cropping if necessary */
+}
+
+
+.hero {
+  padding: 50px 0;
+  background-color: #333;
+  color: white;
+}
+/* Hero image styles */
+.hero-image {
+  width: 100%; /* ensures the image is responsive and fills the width */
+  height: auto; /* maintains the aspect ratio */
+  max-height: 500px; /* you can set a maximum height */
+  object-fit: cover; /* this will ensure the image covers the area, cropping if necessary */
+  display: block; /* replace inline styles with block to remove unwanted white space */
+}
+
+
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text {
+  padding: 1rem;
+}
+
+.feature {
+  padding: 50px 0;
+  background-color: #f8f8f8;
+}
+
+.feature-description h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.feature-description p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.about-preview {
+  padding: 50px 0;
+}
+
+.about-preview h2 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.about-preview p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.hours-address {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.hours-address h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.hours-address p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+
+.menu-button,
+.about-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.menu-button:hover,
+.about-button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2rem;
+  }
+
+  .feature-description h2,
+  .about-preview h2 {
+      font-size: 1.5rem;
+  }
+}
+
+

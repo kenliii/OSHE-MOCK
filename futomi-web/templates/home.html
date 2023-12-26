@@ -1,0 +1,42 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="homepage">
+    <section class="hero">
+        <img src="{{ url_for('static', filename='images/hero-image.jpg') }}" alt="Featured Dish" class="hero-image">
+        
+        <div class="hero-text">
+            <h1>Welcome to Our Restaurant</h1>
+            <p>Experience the fusion of traditional techniques and modern flavors.</p>
+            <a href="{{ url_for('menu') }}" class="menu-button">View Menu</a>
+        </div>
+    </section>
+
+    <section class="feature">
+        <div class="feature-description">
+            <h2>Fresh Ingredients, Unique Creations</h2>
+            <p>Our menu is a testament to our dedication to freshness and culinary innovation.</p>
+        </div>
+        <img src="{{ url_for('static', filename='images/feature-image.png') }}" alt="Sushi Selection" class="feature-image">
+        
+    </section>
+
+    <section class="about-preview">
+        <h2>About Our Chef</h2>
+        <p>Discover the passion and expertise behind every dish we serve.</p>
+        <a href="{{ url_for('about') }}" class="about-button">Learn More</a>
+    </section>
+
+    <section class="hours-address">
+        <h2>Visit Us</h2>
+        <p>123 Foodie Street<br>
+        Gourmet City, YUM 12345</p>
+
+        <h2>Opening Hours</h2>
+        <p>Monday to Friday: 12pm - 10pm<br>
+        Saturday to Sunday: 11am - 11pm</p>
+
+        <h2>You can call us at (123) 456-7890</h2>
+    </section>
+</div>
+{% endblock %}

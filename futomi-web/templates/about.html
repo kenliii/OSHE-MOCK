@@ -1,0 +1,21 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="about-section">
+    <h1>About Us</h1>
+    <img src="{{ url_for('static', filename='images/restaurant-interior.jpg') }}" alt="Our Restaurant" class="about-image">
+    <p>Welcome to Our Restaurant! Founded in the heart of downtown in 2005, Our Restaurant has been the epitome of fine dining in the city. Our commitment to exceptional service and exquisite cuisine has earned us a reputation as a premier dining location.</p>
+    
+    <h2>Our Philosophy</h2>
+    <p>We believe in the farm-to-table approach, using only the freshest, locally-sourced ingredients. Our menu is a celebration of flavors, showcasing traditional techniques with a modern twist. Every dish is crafted with care and attention to detail, ensuring a memorable experience for every guest.</p>
+    
+    <h2>Meet the Chef</h2>
+    <img src="{{ url_for('static', filename='images/chef.jpg') }}" alt="Chef John Doe" class="chef-image">
+    <p>At the helm of our kitchen is Chef John Doe, a culinary visionary who brings over 20 years of experience to every plate. Chef Doe's passion for cooking is evident in his innovative menus and his dedication to sustainable cooking practices.</p>
+
+    <h2>Join Us</h2>
+    <p>Whether you're celebrating a special occasion or simply looking for an exceptional meal, Our Restaurant is the perfect destination. We invite you to join us and indulge in a dining experience like no other.</p>
+
+    <!-- Optional sections could include testimonials, awards, or a photo gallery -->
+</div>
+{% endblock %}
